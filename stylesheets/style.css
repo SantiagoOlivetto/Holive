@@ -68,13 +68,21 @@ ul.navigationBar {
 }
 
 ul.navigationBar >li {
-    padding: 1rem 2rem;
+    margin-top: 2%;
+    padding: 0rem 2rem;
     list-style: none;
 }
 
 
 ul.navigationBar >li:hover {
    text-shadow: 1px 1px 2px black;
+}
+
+nav.navigationBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 /* Links */
@@ -214,7 +222,22 @@ li.bigPhrase {
 
 div.ourMission {
     background-color: #2E2C20;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.mainStage1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 250%;
+    grid-template-areas:
+    "banner banner banner" 
+    "text1 text2 text3"
+    ;
+    text-align: center;
+    padding: 0% 5% 15% 5%;
+    row-gap: 30%;
+    column-gap: 5%;
+    padding-top: 8%;
+    margin-bottom: 8%;
 }
 
 h2.bannerMission {
@@ -225,7 +248,7 @@ h2.bannerMission {
     justify-content: center;
 }
 
-p.interactiveText {
+p.interactiveText1 {
     background: linear-gradient(180deg, #5EBCAF 0%, #42402E 100%);
     display: flex;
     align-items: center;
@@ -233,6 +256,27 @@ p.interactiveText {
     font-size: x-large;
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    grid-area: text1;
+}
+p.interactiveText2 {
+    background: linear-gradient(180deg, #5EBCAF 0%, #42402E 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    grid-area: text2;
+}
+p.interactiveText3 {
+    background: linear-gradient(180deg, #5EBCAF 0%, #42402E 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    grid-area: text3;
 }
 
 .arrowUp {
@@ -261,16 +305,17 @@ h2.banner {
 .mainStage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 100%;
+    grid-template-columns: 31% 31% 31%;
     grid-template-areas:
     "banner banner banner" 
     "clothes tools extras"
     ;
     text-align: center;
-    padding: 0% 5% 15% 5%;
+    padding: 0% 8% 15% 5%;
     height: 40vh;
     column-gap: 5%;
-    padding-top: 3%;
+    padding-top: 8%;
+    margin-bottom: 8%;
 }
 
 img.storeImg1 {
@@ -299,6 +344,14 @@ img.storeImg3 {
 @media screen and (max-width: 768px) {
 
     .mainStage {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: 100%;
+    }
+
+    .mainStage1 {
+
         display: flex;
         flex-direction: column;
         align-content: center;
