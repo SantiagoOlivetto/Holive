@@ -643,6 +643,10 @@ textarea.writtingArea {
     resize: none;
 }
 
+section.buttons {
+    margin: 5% 0%;
+}
+
 button {
     display: inline-block;
     margin: 3% 0 5% 3%;

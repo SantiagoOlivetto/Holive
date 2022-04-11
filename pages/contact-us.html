@@ -46,33 +46,27 @@
         
         </section>
 
-        <!-- Formulario de contacto -->
+        <!-- Contact form -->
 
         <section>
 
             <form id="form" action="/ruta-destino" method="get" enctype="">
                 <fieldset class="contactDetails">
                     <p class="formTitle">Contact details</p>
-                        <section>
-                    
-                            <label for="lastname">Last name</label>
-                            <input type="text" name="UserName" id="lastname" placeholder="Woodworking" required>
-                        </section> 
 
-                        <section>
-                            <label for="name">Name</label>
-                            <input type="text" name="UserName" id="name" placeholder="Holive" required>
-                            </section>
-                
-                        <section>
-                            <label for="email">E-mail</label>
-                            <input type="email" name="UserEmail" id="email" placeholder="Holive@woodworking.com" required>
-                        </section>
-
-                        <section>
-                            <label for="phone">Phone</label>
-                            <input type="tel" name="UserTel" id="phone" placeholder="1234567890">
-                        </section>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Last name</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="-">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="-">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Phone</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="0123456789">
+                    </div>
 
                     <!-- Region -->
 
@@ -84,23 +78,20 @@
                         <option value="af">Africa</option>
                     </select>
                 
-                </fieldset>
-
-                <fieldset class="contactDetails">
-
-                    <p class="formTitle">Write our team</p>
-                    <textarea class="writtingArea" name="message" placeholder="Please leave your messege here..." cols="100" rows="20"></textarea>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Write our team here</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
 
                 </fieldset>
-                <section>
+
+                <section class="buttons">
                     <button class="button1" type="submit">Send</button>
                     <button class="button2" type="reset">Clean</button>
                 </section>
         </form>
 
         </section>
-
-
 
     </main>
 
