@@ -148,53 +148,36 @@ main {
 
 
 div.mainHome {
-    display: flex;
     background-image: url("../assets/img/background\ Holi.jpg");
     background-size: cover;
-}
-
-ul.home {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5%;
-    padding-bottom: 20%;
-    padding-left: 4%;
-    justify-content: end;
+    padding: 15% 0%;
 }
 
 section.phrase {
-    margin: 10% 0 0 0;
-    width: 100%; 
+    animation: back-inLeft 1s 1;
+    position: relative;
 }
 
-
-
 li.bigPhrase {
-    padding-right: 5%;
-    font-size: 120%;
+    
+}
+
+@keyframes back-inLeft {
+    0% {
+        left: -100%;
+    }
+    
+    100% {
+        left: 0;
+    }
+    
 }
 
 /*++++++++++++++++++++ MEDIA QUERIE++++++++++++++++ */
 
 @media screen and (max-width: 768px) {
 
-    div.mainHome {
-        height: 100vh;
-    }
-
-    ul.home {
-        padding: 0% 0%;
-        margin-bottom: 5%;
-    }
-
-    section.phrase {
-        font-size: 16px;
-        width: 100%;
-        margin-bottom: 10%;
-    }
-
     li.bigPhrase {
-        font-size: 70%;
         padding: 15% 8%;
     }
 
@@ -202,9 +185,9 @@ li.bigPhrase {
 
 @media screen and (max-width: 600px) {
 
-/*     li.bigPhrase {
+    li.bigPhrase {
         font-size: 100%;
-    }     */
+    }    
 }
 
 /* +++++++++++++++++++++++++++ */
@@ -760,7 +743,6 @@ a#wppIcon {
         display: flex;
         justify-content: center;
         align-content: center;
-        background-color: #42402E;
         padding: 5%;
     }
 
