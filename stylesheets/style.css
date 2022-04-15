@@ -210,32 +210,32 @@ section.phrase {
 
 div.ourMission {
     background-color: #2E2C20;
-}
+}  
 
 .mainStage1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50% 250%;
-    grid-template-areas:
-    "banner banner banner" 
-    "text1 text2 text3"
-    ;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: 50% 250%;
+     grid-template-areas:
+        "banner banner banner" 
+        "text1 text2 text3"
+        ;
     text-align: center;
     padding: 0% 5% 15% 5%;
     row-gap: 30%;
     column-gap: 5%;
     padding-top: 8%;
     margin-bottom: 8%;
-}
-
+    }
+    
 h2.bannerMission {
     display: flex;
     color: white;
     grid-area: banner;
     align-items: center;
     justify-content: center;
-}
-
+    }
+    
 p.interactiveText1 {
     background: linear-gradient(180deg, #5EBCAF 0%, #42402E 100%);
     display: flex;
@@ -245,17 +245,17 @@ p.interactiveText1 {
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     grid-area: text1;
-}
+    }
 p.interactiveText2 {
     background: linear-gradient(180deg, #5EBCAF 0%, #42402E 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: x-large;
     color: white;
+    font-size: x-large;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     grid-area: text2;
-}
+    }
 p.interactiveText3 {
     background: linear-gradient(180deg, #5EBCAF 0%, #42402E 100%);
     display: flex;
@@ -265,23 +265,35 @@ p.interactiveText3 {
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     grid-area: text3;
-}
+    }  
 
 .arrowUp {
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
+    padding-top: 20%;
     padding-bottom: 5%;
-    margin: 0% 47% 0% 47%;
+    margin: 20% 47% 0% 47%;
     font-size: 350%;
     color: #5EBCAF;
-}
-
+    }
+    
 .arrowUp:hover {
     color: white;
-}
+    }
 
+@media screen and (min-width:768px) {
+    .arrowUp {
+        margin-top: 0;
+        padding-top: 10%;
+    }  
+
+    .mainStage1 {
+        grid-template-rows: 50% 500%;
+       }
+}
+    
 /* HOME END */
 
 
@@ -294,6 +306,17 @@ h2.banner {
     font-size: 250%;
     color: white;
     
+}
+
+.arrowUp1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 5%;
+    margin: 0% 47% 0% 47%;
+    font-size: 350%;
+    color: #5EBCAF;
 }
 
 /* .mainStage {
