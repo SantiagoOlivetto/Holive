@@ -58,6 +58,7 @@ div.nav {
     background-color: #42402E;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 0% 5% 0 5%;
+    z-index: 300;
 }
 
 ul.navigationBar {
@@ -68,6 +69,7 @@ ul.navigationBar {
 }
 
 ul.navigationBar >li {
+    
     margin-top: 2%;
     padding: 0rem 2rem;
     list-style: none;
@@ -93,12 +95,18 @@ a.navLink {
     color: white;
     font-size: 1.2rem;
     transition: 1s;
-    
+    box-sizing: border-box; 
+    position: relative;
 }
 
 a.navLink:hover{
+    margin: 0s;
     color: #5EBCAF;
-    font-size:130%;  
+    font-size: 125%;  
+}
+
+a.zParameter {
+    z-index: 300;
 }
 
 /* +++++++++++++MEDIA QUERIE ++++++++++++*/
@@ -270,15 +278,22 @@ p.interactiveText3 {
     color: #5EBCAF;
 }
 
+.arrowUp:hover {
+    color: white;
+}
+
 /* HOME END */
 
 
 /* -------------------------------------STORE----------------------------------------- */
 
 h2.banner {
+    display: inline-block;
+    width: 100%;
     grid-area: banner;
-    font-size: xx-large;
+    font-size: 250%;
     color: white;
+    
 }
 
 /* .mainStage {
@@ -643,9 +658,32 @@ button:hover {
 
 }
 
-
-
 /* CONTACT US END */
+
+/* Custom properties for BS */
+
+.myGradient {
+    background: #42402E;
+}
+
+.boxShadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-color: #42402E;
+    color: white;
+}
+
+#buttonColorBackground {
+    background: #5EBCAF;
+}
+
+.titleBackground {
+    background-color: #42402E;
+}
+
+.borderColor {
+    border-color: black;
+    border-style: solid;
+}
     
  /* BODY END */  
 
