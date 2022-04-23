@@ -4069,6 +4069,7 @@ textarea.form-control-lg {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
+  background-color: #5EBCAF;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4436,7 +4437,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
+  color: transparent;
   border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
@@ -5379,6 +5380,7 @@ textarea.form-control-lg {
   border: 0;
   border-radius: 0.25rem;
   opacity: 0.5;
+  background-color: #5EBCAF;
 }
 .btn-close:hover {
   color: #000;

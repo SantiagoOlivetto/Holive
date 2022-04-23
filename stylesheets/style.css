@@ -641,6 +641,7 @@ fieldset.contactDetails {
     align-self: center;
     font-size: large;
     width: 35%;
+    min-width: 20rem;
     padding: 1%;
     margin: 5% 5% 0% 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -695,6 +696,10 @@ button:hover {
     color: white;
 }
 
+.cianBackCo {
+    background: #5EBCAF;
+}
+
 #buttonColorBackground {
     background: #5EBCAF;
 }
@@ -707,7 +712,32 @@ button:hover {
     border-color: black;
     border-style: solid;
 }
+
+.navBackCo {
+    background-color: #42402E;
+}
+
+.mainBackCo {
+    background-color: #2E2C20;
+}
     
+.fontCoWi {
+    color: white !important;
+    text-decoration: none;
+}
+
+.tinyLogo {
+    width: 15rem;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+   .ulTransparent {
+        background: transparent !important;
+    }
+}
+
  /* BODY END */  
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx FOOTER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/

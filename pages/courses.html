@@ -27,10 +27,10 @@
 
         </header>
 
+        <!------------------------------- Tabla de nav ----------------------------->
 
-        <div class="nav">
+  <!--       <div class="nav">
     
-            <!------------------------------- Tabla de nav ----------------------------->
             <nav class="navigationBox">
                <ul class="navigationBar">
                    <li class="navSideLeft"><a href="../index.html" class="navLink">Home</a></li>
@@ -42,7 +42,39 @@
                
            </nav>
 
-       </div>
+        </div> -->
+
+        <nav class="navbar navbar-expand-md navbar-light navBackCo sticky-top boxShadow">
+            <div class="container-fluid">
+              <button class="navbar-toggler cianBackCo" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header navBackCo fontCoWi">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Surf around...</h5>
+                  <button type="button" class="btn-close text-reset cianBackCo" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mainBackCo fontCoWi">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 navBackCo ulTransparent">
+                    <li class="nav-item">
+                        <li><a href="../index.html" class="nav-link fontCoWi">Home</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <li><a  href="store.html" class="nav-link fontCoWi">Store</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <li><a  href="courses.html" class="nav-link fontCoWi">Courses</a></li>
+                    <li class="nav-item">
+                        <li><a  href="videos.html" class="nav-link fontCoWi">Videos</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <li><a  href="contact-us.html" class="nav-link fontCoWi">Contact us</a></li>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
 
 
     <main>
@@ -158,5 +190,6 @@
         </div>
         
     </footer>
+    <script src="../js/bootstrap.js"></script>
 </body>
 </html>
