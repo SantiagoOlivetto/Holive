@@ -1,0 +1,133 @@
+/* Home */
+
+main {
+    background-color: $primary_background;
+}
+
+div.mainHome {
+    background-image: url("../assets/img/background\ Holi.jpg");
+    background-size: cover;
+    padding: 15% 0%;
+
+        /* Slide in */
+    .phrase {
+        animation: back-inLeft 1s 1;
+        position: relative;
+
+        @keyframes back-inLeft {
+            0% {
+               left: -100%;
+            }
+            100% {
+               left: 0;
+               } 
+        }
+
+        .keyWord {
+        color: $key_word;
+        }
+    }   
+} 
+
+ /* Media querie text responsive */
+@media screen and (max-width: 768px) {
+    div.mainHome {
+        padding: 0;
+        li.bigPhrase {
+            padding: 15% 8%;
+        }            
+    }   
+}         
+ @media screen and (max-width: 600px) {        
+    li.bigPhrase {
+    font-size: 100%;
+    }    
+}
+
+/* Our mission */
+section.mainStage1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 300%;
+    grid-template-areas:
+       "banner banner banner" 
+       "text1 text2 text3"
+       ;
+   text-align: center;
+   padding: 0% 5% 15% 5%;
+   row-gap: 30%;
+   column-gap: 5%;
+   padding-top: 8%;
+
+   h2.bannerMission {
+    display: flex;
+    color: $primary_color;
+    grid-area: banner;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    p.interactiveText1 {
+        background: $holive_gradient;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+        color: $primary_color;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        grid-area: text1;
+    }
+    p.interactiveText2 {
+        background: $holive_gradient;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $primary_color;
+        font-size: x-large;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        grid-area: text2;
+    }
+    p.interactiveText3 {
+        background: $holive_gradient;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+        color: $primary_color;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        grid-area: text3;
+    }  
+}
+
+/* Arrow */
+.arrowUp {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 5%;
+    font-size: 350%;
+    color: $key_word;
+    transition: 1s;
+    }
+    
+.arrowUp:hover {
+    color: $primary_color;
+    }
+
+
+@media screen and (min-width:768px) {
+    .arrowUp {
+        margin-top: 0;
+    }  
+
+    .mainStage1 {
+        grid-template-rows: 50% 500%;
+       }
+}
+
+@media screen and (max-width:767px) {
+    .arrowUp {
+        padding-top: 40%;
+    }
+}
