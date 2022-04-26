@@ -1,0 +1,22 @@
+@import 'variables';
+
+/* Store */
+
+h2.banner {
+    display: inline-block;
+    width: 100%;
+    grid-area: banner;
+    font-size: 250%;
+    color: $primary_color;
+}
+
+.arrowUp1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-bottom: 5%;
+    margin: 0% 47% 0% 47%;
+    font-size: 350%;
+    color: $key_word;
+}
