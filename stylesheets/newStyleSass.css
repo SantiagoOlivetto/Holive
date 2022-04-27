@@ -250,6 +250,47 @@ div.channelsVideos {
     height: 100%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
 
+/* Colors */
+/* Box Shadow */
+/* Contact us start */
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #2E2C20;
+  color: white; }
+  #form fieldset.contactDetails {
+    align-self: center;
+    font-size: large;
+    width: 35%;
+    min-width: 20rem;
+    padding: 1%;
+    margin: 5% 5% 0% 5%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(180deg, #5EBCAF 0%, #42402E 100%); }
+    #form fieldset.contactDetails p.formTitle {
+      font-size: x-large;
+      margin-bottom: 2%; }
+      #form fieldset.contactDetails p.formTitle input {
+        width: 50%;
+        margin: 3% 3% 5% 3%; }
+  #form section.buttons {
+    margin: 5% 0%; }
+    #form section.buttons button {
+      display: inline-block;
+      margin: 3% 0 5% 3%;
+      padding: 1%;
+      font-size: x-large;
+      color: white;
+      background-color: #5EBCAF;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+    #form section.buttons button:hover {
+      background-color: white;
+      color: #5EBCAF;
+      transition: 1s; }
+
+/* Contact us end */
 footer {
   background-color: #42402E;
   width: 100%;
@@ -305,3 +346,34 @@ footer {
 
 .circleMedia:hover {
   background: white; }
+
+.myGradient {
+  background: #42402E; }
+
+.boxShadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-color: #42402E;
+  color: white; }
+
+.cianBackCo {
+  background: #5EBCAF; }
+
+#buttonColorBackground {
+  background: #5EBCAF; }
+
+.titleBackground {
+  background-color: #42402E; }
+
+.borderColor {
+  border-color: black;
+  border-style: solid; }
+
+.navBackCo {
+  background-color: #42402E; }
+
+.mainBackCo {
+  background-color: #2E2C20; }
+
+.fontCoWi {
+  color: white !important;
+  text-decoration: none; }

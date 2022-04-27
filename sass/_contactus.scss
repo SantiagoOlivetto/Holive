@@ -1,0 +1,57 @@
+@import 'variables';
+
+/* Contact us start */
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: $primary_background;
+    color: $primary_color;
+
+    fieldset.contactDetails {
+        align-self: center;
+        font-size: large;
+        width: 35%;
+        min-width: 20rem;
+        padding: 1%;
+        margin: 5% 5% 0% 5%;
+        box-shadow: $box_shadow_prop;
+        background: $holive_gradient;
+
+        p.formTitle {
+            font-size: x-large;
+            margin-bottom: 2%;
+
+            input {
+                width: 50%;
+                margin: 3% 3% 5% 3%; 
+            }
+        }
+    }
+    
+    section.buttons {
+        margin: 5% 0%;
+
+        button {
+            display: inline-block;
+            margin: 3% 0 5% 3%;
+            padding: 1%;
+            font-size: x-large;
+            color: $primary_color;
+            background-color: $key_word;
+            box-shadow: $box_shadow_prop;
+        }
+        
+        
+        button:hover {
+            background-color: $primary_color;
+            color: $key_word;
+            transition: 1s;
+        
+        }
+    }
+}
+
+/* Contact us end */
