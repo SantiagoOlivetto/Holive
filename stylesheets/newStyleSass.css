@@ -10,7 +10,7 @@ body {
   min-height: 100%;
   font-family: 'Roboto', sans-serif; }
 
-/* Start */
+/* Header start */
 header {
   place-items: center;
   color: #42402E;
@@ -49,7 +49,8 @@ header {
   color: white !important;
   text-decoration: none; }
 
-/* Home */
+/* Header end */
+/* Home start*/
 main {
   background-color: #2E2C20; }
 
@@ -150,9 +151,10 @@ section.mainStage1 {
   .arrowUp {
     padding-top: 40%; } }
 
+/* Home end */
 /* Colors */
 /* Box Shadow */
-/* Store */
+/* Store start*/
 h2.banner {
   display: inline-block;
   width: 100%;
@@ -170,8 +172,10 @@ h2.banner {
   font-size: 350%;
   color: #5EBCAF; }
 
+/* Store end */
 /* Colors */
 /* Box Shadow */
+/* Videos start */
 h2.videoTitle {
   color: #2E2C20;
   font-size: 400%;
@@ -250,6 +254,7 @@ div.channelsVideos {
     height: 100%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
 
+/* Videos end */
 /* Colors */
 /* Box Shadow */
 /* Contact us start */
@@ -291,6 +296,7 @@ div.channelsVideos {
       transition: 1s; }
 
 /* Contact us end */
+/* Footer start */
 footer {
   background-color: #42402E;
   width: 100%;
@@ -347,6 +353,7 @@ footer {
 .circleMedia:hover {
   background: white; }
 
+/* Footer end */
 .myGradient {
   background: #42402E; }
 
