@@ -60,43 +60,21 @@ section.mainStage1 {
    padding-top: 8%;
 
    h2.bannerMission {
-    display: flex;
+    @include centerBox;
     color: $primary_color;
     grid-area: banner;
-    align-items: center;
-    justify-content: center;
     }
-    
-    p.interactiveText1 {
-        background: $holive_gradient;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: x-large;
-        color: $primary_color;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-        grid-area: text1;
+
+    @for $i from 1 through 3 {
+        p.interactiveText#{$i}{
+            background: $holive_gradient;
+            @include centerBox;
+            font-size: x-large;
+            color: $primary_color;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+            grid-area: text + $i;  
+        }
     }
-    p.interactiveText2 {
-        background: $holive_gradient;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $primary_color;
-        font-size: x-large;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        grid-area: text2;
-    }
-    p.interactiveText3 {
-        background: $holive_gradient;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: x-large;
-        color: $primary_color;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-        grid-area: text3;
-    }  
 }
 
 /* Arrow */

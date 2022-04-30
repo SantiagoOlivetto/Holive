@@ -8,3 +8,11 @@ $nav_back_co: #42402E;
 
 /* Box Shadow */
 $box_shadow_prop: 0 0 15px rgba(0, 0, 0, 0.5);
+
+/* Center box */
+
+@mixin centerBox () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

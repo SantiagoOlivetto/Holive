@@ -11,9 +11,7 @@ h2.banner {
 }
 
 .arrowUp1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centerBox;
     align-self: center;
     padding-bottom: 5%;
     margin: 0% 47% 0% 47%;

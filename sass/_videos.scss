@@ -81,25 +81,14 @@ div.channelsVideos {
     text-align: center;
 
     /* Video section */
-    iframe.video1 {
-        grid-area: video1;
-        width: 80%;
-        height: 100%;
-        box-shadow: $box_shadow_prop;
-    }
-    
-    iframe.video2 {
-        grid-area: video2;
-        width: 80%;
-        height: 100%;
-        box-shadow: $box_shadow_prop;
-    }
-    
-    iframe.video3 {
-        grid-area: video3;
-        width: 80%;
-        height: 100%;
-        box-shadow: $box_shadow_prop;
+
+    @for $i from 1 through 3 {
+        iframe.video#{$i}{
+            grid-area: video + $i;
+            width: 80%;
+            height: 100%;
+            box-shadow: $box_shadow_prop;  
+        }
     }
 }
 

@@ -18,10 +18,8 @@ header {
     margin-top: 1rem;
 
     .head {
-        display: flex;
+        @include centerBox;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 2.5rem;
 
         #logo {
