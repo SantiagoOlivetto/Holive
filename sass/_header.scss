@@ -62,4 +62,8 @@ header {
     text-decoration: none;
 }
 
+nav li a.colorTransform:hover {
+    color: $key_word !important; 
+}
+
 /* Header end */

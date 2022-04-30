@@ -17,6 +17,11 @@ h2.banner {
     margin: 0% 47% 0% 47%;
     font-size: 350%;
     color: $key_word;
+    transition: 1s;
 }
+
+.arrowUp1:hover {
+    color: $primary_color;
+    }
 
 /* Store end */

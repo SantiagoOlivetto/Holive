@@ -50,6 +50,9 @@ header {
   color: white !important;
   text-decoration: none; }
 
+nav li a.colorTransform:hover {
+  color: #5EBCAF !important; }
+
 /* Header end */
 /* Home start*/
 main {
@@ -172,7 +175,11 @@ h2.banner {
   padding-bottom: 5%;
   margin: 0% 47% 0% 47%;
   font-size: 350%;
-  color: #5EBCAF; }
+  color: #5EBCAF;
+  transition: 1s; }
+
+.arrowUp1:hover {
+  color: white; }
 
 /* Store end */
 /* Colors */
