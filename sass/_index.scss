@@ -48,14 +48,14 @@ div.mainHome {
 section.mainStage1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50% 300%;
+    grid-template-rows: 5rem 20rem;
     grid-template-areas:
        "banner banner banner" 
        "text1 text2 text3"
        ;
    text-align: center;
-   padding: 0% 5% 15% 5%;
-   row-gap: 30%;
+   padding: 0% 5% 5% 5%;
+   row-gap: 5%;
    column-gap: 5%;
    padding-top: 8%;
 
@@ -74,6 +74,12 @@ section.mainStage1 {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
             grid-area: text + $i;  
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.mainStage1 {
+        grid-template-rows: 5rem 10rem;
     }
 }
 
@@ -102,12 +108,6 @@ section.mainStage1 {
     .mainStage1 {
         grid-template-rows: 50% 500%;
        }
-}
-
-@media screen and (max-width:767px) {
-    .arrowUp {
-        padding-top: 40%;
-    }
 }
 
 /* Home end */

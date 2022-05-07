@@ -90,11 +90,11 @@ div.mainHome {
 section.mainStage1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50% 300%;
+  grid-template-rows: 5rem 20rem;
   grid-template-areas: "banner banner banner"  "text1 text2 text3";
   text-align: center;
-  padding: 0% 5% 15% 5%;
-  row-gap: 30%;
+  padding: 0% 5% 5% 5%;
+  row-gap: 5%;
   column-gap: 5%;
   padding-top: 8%; }
   section.mainStage1 h2.bannerMission {
@@ -131,6 +131,10 @@ section.mainStage1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     grid-area: text3; }
 
+@media screen and (max-width: 600px) {
+  section.mainStage1 {
+    grid-template-rows: 5rem 10rem; } }
+
 /* Arrow */
 .arrowUp {
   display: inline-flex;
@@ -151,10 +155,6 @@ section.mainStage1 {
   .mainStage1 {
     grid-template-rows: 50% 500%; } }
 
-@media screen and (max-width: 767px) {
-  .arrowUp {
-    padding-top: 40%; } }
-
 /* Home end */
 /* Colors */
 /* Box Shadow */
@@ -173,7 +173,6 @@ h2.banner {
   align-items: center;
   align-self: center;
   padding-bottom: 5%;
-  margin: 0% 47% 0% 47%;
   font-size: 350%;
   color: #5EBCAF;
   transition: 1s; }
