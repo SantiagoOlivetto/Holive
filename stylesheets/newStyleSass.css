@@ -167,6 +167,12 @@ h2.banner {
   font-size: 250%;
   color: white; }
 
+p.hoverColor {
+  transition: 1s; }
+
+p.hoverColor:hover {
+  background-color: #5EBCAF !important; }
+
 .arrowUp1 {
   display: flex;
   justify-content: center;
@@ -374,6 +380,9 @@ footer {
 
 .cianBackCo {
   background: #5EBCAF; }
+
+.keyWord {
+  color: #5EBCAF; }
 
 #buttonColorBackground {
   background: #5EBCAF; }

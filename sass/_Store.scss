@@ -10,6 +10,14 @@ h2.banner {
     color: $primary_color;
 }
 
+p.hoverColor {
+    transition: 1s;
+}
+
+p.hoverColor:hover {
+    background-color: $key_word !important;
+}
+
 .arrowUp1 {
     @include centerBox;
     align-self: center;
